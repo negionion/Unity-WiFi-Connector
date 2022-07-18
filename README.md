@@ -76,4 +76,4 @@
 - _data : 傳送的字串資料
 
 #### public void disconnect()
-中斷其中一個Client的連線
+中斷Client的連線
