@@ -1,8 +1,8 @@
 # Unity WiFi Connector
-
+依存於Unity MonoBehaviour的生命週期
 
 ## 使用流程
-依存於Unity MonoBehaviour的生命週期 <>
+
 ![](https://i.imgur.com/3SnebZu.png)
 
 ---
