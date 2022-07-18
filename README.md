@@ -2,14 +2,11 @@
 
 
 ## 使用流程
+依存於Unity MonoBehaviour的生命週期
 ![](https://i.imgur.com/3SnebZu.png)
 
 ---
 
-## Document
-依存於Unity MonoBehaviour的生命週期
-
----
 ## WiFiSocket
 
 ### struct
@@ -18,8 +15,6 @@
 該結構用於紀錄TCP Server設定(WiFi設定)
 - ip : Server ip位址，預設0.0.0.0，支援所有ip連入
 - port : Server port號，預設43208，請依需求自行更改
-
----
 
 ### static method
 
@@ -31,8 +26,6 @@
 #### public static WiFiSocket getWiFiSocket(string _wifiName)
 依識別名稱取得WiFiSocket
 - _wifiName：用於識別WiFi Server
-
----
 
 ### public method
 
