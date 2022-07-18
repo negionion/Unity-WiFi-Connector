@@ -9,12 +9,16 @@
 
 ## WiFiSocket
 
+---
+
 ### struct
 
 #### public WiFiConfig
 該結構用於紀錄TCP Server設定(WiFi設定)
 - ip : Server ip位址，預設0.0.0.0，支援所有ip連入
 - port : Server port號，預設43208，請依需求自行更改
+
+---
 
 ### static method
 
@@ -26,6 +30,8 @@
 #### public static WiFiSocket getWiFiSocket(string _wifiName)
 依識別名稱取得WiFiSocket
 - _wifiName：用於識別WiFi Server
+
+---
 
 ### public method
 
@@ -59,15 +65,15 @@
 
 ## WiFiSocket.WiFiClient
 
-### public void recvFunc(Action\<string> recvAction)
+#### public void recvFunc(Action\<string> recvAction)
 接收資料，非同步接收，使用單一記憶體空間(新資料直接覆蓋舊資料)
 (可多載改為使用其他資料型別)
 - recvAction : 有新資料將會執行該委派函數，委派引數為接收到的字串資料，無新資料則不執行
 
-### public void sendFunc(string _data)
+#### public void sendFunc(string _data)
 送出資料，非同步傳送，使用單一記憶體空間(新資料直接覆蓋舊資料)
 (可多載改為使用其他資料型別)
 - _data : 傳送的字串資料
 
-### public void disconnect()
-中斷連線
+#### public void disconnect()
+中斷其中一個Client的連線
