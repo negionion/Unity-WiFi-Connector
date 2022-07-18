@@ -37,6 +37,7 @@
 
 #### public WiFiClient getWiFiClient(string _clientName)
 依識別名稱取得WiFiClient
+- _clientName：用於識別WiFi Client
 
 #### public void createServer(int _backlog = 1)
 建立Server
